@@ -1,0 +1,38 @@
+<template>
+
+   <div class.bind="loadingModalValue ? 'is-active' : ''" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content ">
+         <article class="message animated fadeIn faster">
+            <div class="message-header">
+               <p>Loading!</p>
+            </div>
+            <div class="message-body">
+               <img src="./src/assets/loader.gif">
+            </div>
+         </article>
+      </div>
+   </div>
+
+   <div class="box container animated fadeIn fast">
+      <div class="card animated fadeIn" repeat.for="ticket of tickets">
+         <header class="card-header">
+            <p class="card-header-title">
+               ${ticket.accountname}
+            </p>
+         </header>
+         <div class="card-content" >
+            <div class="content ${ticket.accountname}">
+               <p>Expiration Date: ${ticket.ssl_expiration_date__c}</p>
+               <p class="" >Ticket Number: <a href="https://salesfusion.zendesk.com/agent/tickets/${ticket.ticket_number}" target="blank"> ${ticket.ticket_number}</a></p>
+               <p class="">Zendesk Status: ${ticket.zdStatus}</p>
+            </div>
+         </div>
+         <footer class="card-footer">
+            <a route-href="route: edit; params.bind: {slug: ticket.slug}"> <i class="fas fa-pen-square"></i></a>
+            <a class="card-footer-item ${ticket.status}" click.trigger="createZendeskController($event)" name="${ticket.ssl_expiration_date__c}" value="${ticket.accountname}">${ticket.status}</a>
+         </footer>
+      </div>
+   </div>
+   
+</template>

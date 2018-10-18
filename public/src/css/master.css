@@ -1,0 +1,142 @@
+ .container {
+  margin: 20px auto !important;
+  text-align: center;
+}
+
+table {
+   margin: auto;
+}
+
+.card:hover {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+html {
+  background: #8A2387;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.message-header {
+  background: #8A2387;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card {
+  width: 310px;
+  margin: 5px 10px 10px 0px;
+  display: inline-block;
+}
+
+.logo-padding {
+  padding-top: 0px !important;
+  padding-bottom: 10px !important;
+}
+
+.loading {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.loading-image {
+  position: relative;
+  top: 15%;
+}
+
+.hidden {
+  display: none;
+}
+
+a {
+  color: #833ab4 !important;
+}
+
+a:hover {
+  color: #fd1d1d !important;
+}
+
+.card-footer-item {
+  font-weight: 450;
+}
+
+.Ticket-Already-Created {
+  font-weight: 450 !important;
+  color: #E4363F !important;
+}
+
+.align-left {
+  text-align: left !important;
+}
+
+td {
+    padding: 5px !important;
+}
+
+.card-content {
+  line-height: 11px;
+  height: 113px;
+}
+
+.one-hundred {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.modal {
+  margin-top: 25px;
+  font-size: 21px;
+  text-align: center;
+
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 2s; /* Firefox < 16 */
+      -ms-animation: fadein 2s; /* Internet Explorer */
+       -o-animation: fadein 2s; /* Opera < 12.1 */
+          animation: fadein 2s;
+}
+
+.modal-background {
+    background-color: rgba(10, 10, 10, 0.96) !important;
+}
+
+.fa-pen-square  {
+  padding-top: 13.5px;
+padding-left: 10px;
+font-size: 21px;
+color: #833ab4;
+}
+
+.fa-pen-square:hover {
+  color: #fcb045;
+}
+
+input {
+  width: 450px !important;
+}
+
+
+input:focus {
+outline: #fcb045 solid 2px;
+}
+input[type=submit]:focus{
+outline: #fcb045 solid 2px;
+}
+
+.button {
+  display: inline-block !important;
+  margin: 10px auto;
+  background: linear-gradient(135deg, #6d50a2 0%, #ed2b88 100%);
+  border: none !important;
+}
+
+
+
+.is-overlay, .image.is-square img, .image.is-1by1 img, .image.is-5by4 img, .image.is-4by3 img, .image.is-3by2 img, .image.is-5by3 img, .image.is-16by9 img, .image.is-2by1 img, .image.is-3by1 img, .image.is-4by5 img, .image.is-3by4 img, .image.is-2by3 img, .image.is-3by5 img, .image.is-9by16 img, .image.is-1by2 img, .image.is-1by3 img, .modal, .modal-background, .hero-video {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: -25px !important;

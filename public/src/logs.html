@@ -1,0 +1,34 @@
+<template>
+
+  <div class="container box animated fadeIn fast">
+
+<table class="table is-bordered">
+
+<thead>
+  <th>Account Name</th>
+  <th>SSL Exp Date</th>
+  <th>Ticket Number</th>
+  <th>Ticket Status</th>
+  <th>Zendesk Status</th>
+  <th>DB Create Date </th>
+  <th>DB Ticket ID</th>
+
+
+</thead>
+
+<tr repeat.for="ticket of tickets">
+  <td >${ticket.accountname}</td>
+  <td>${ticket.ssl_expiration_date__c}</td>
+  <td>${ticket.ticket_number}</td>
+  <td>${ticket.status}</td>
+  <td>${ticket.zdStatus}</td>
+  <td>${ticket.createDate}</td>
+  <td>${ticket._id}</td>
+
+</tr>
+
+</table>
+
+  </div>
+
+</template>

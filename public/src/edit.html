@@ -1,0 +1,9 @@
+<template>
+  <div class="container box">
+    <p class="title is-4">${accountName}</p>
+    <p class="">Enter the ticket number you would like to update the entry with:</p>
+    <input value.bind="ticketId" class="input" type="text" placeholder="12345"></input>
+    <p>${ticketId}</p>
+    <button class="button is-primary" click.delegate="updateTicketNumber()">Submit</button>
+  </div>
+</template>
